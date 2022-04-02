@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100;1,200;1,400;1,800&display=swap"rel="stylesheet">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Formulário de pesquisa FreeCode </h1>
+            <p>Obrigado por disponibilizar um pouquinho do seu tempo para nos ajudar a melhorar a plataforma :)</p>
+        </header>
+    </div>
+
+    <form action="#" method="POST" id="form">
+        <div class="form_group">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" class="form_control" placeholder="Digite o seu nome " required>
+        </div>
+        <div class="form_group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="form_control" placeholder="Digite seu Email" required>
+        </div>
+        <div class="form_group">
+            <label id="number_label" for="number">Idade (opicional) </label>
+            <input type="number" name="age" id="number" min="10" max="99" class="form_control"
+                placeholder="Qual sua idade?">
+        </div>
+        <div class="form_group">
+            <p>Qual opção melhor descreve seu papel atual?</p>
+            <select name="role" class="form_control">
+                <option value="estudante">Estudante</option>
+                <option value="trabalho">Trabalho em tempo integral</option>
+                <option value="estagio">Estágiario</option>
+                <option value="prefere_nao">Prefiro não dizer</option>
+                <option value="outros">Outros</option>
+            </select>
+        </div>
+        <div class="form_group">
+            <p>Você recomendaria a FreeCode para um amigo?</p>
+            <label>
+                <input name="recomendar" value="sim" type="radio" class="input_radio" checked> Sim
+            </label>
+            <label>
+                <input name="recomendar" value="talvez" type="radio" class="input_radio"> Talvez
+            </label>
+            <label>
+                <input name="recomendar" value="não" type="radio" class="input_radio"> Não
+            </label>
+        </div>
+        <div class="form_group">
+            <p>Qual é o seu recurso favorito do FreeCode?</p>
+            <select id="recurso" name="recurso" class="form_control" required>
+                <option value="desafios">Desafios</option>
+                <option value="projetos">Projetos</option>
+                <option value="comunidade">Comunidade</option>
+            </select>
+        </div>
+        <div class="form_group">
+            <p> O que você gostaria de ver melhorado?</p>
+            <label>
+                <input name="melhorar" value="projetos_front_end" type="checkbox" >Projetos de
+                Front-End
+            </label>
+            <label>
+                <input name="melhorar" value="projetos_back_end" type="checkbox" >Projetos de Back-End
+            </label>
+            <label>
+                <input name="melhorar" value="desafios" type="checkbox"> Desafios
+            </label>
+            <label>
+                <input name="melhorar" value="comunidade" type="checkbox"> Comunidade
+            </label>
+            <label>
+                <input name="melhorar" value="ajuda" type="checkbox"> Salas de ajuda
+            </label>
+            <label>
+                <input name="melhorar" value="videos" type="checkbox"> Videos
+            </label>
+            <label>
+                <input name="melhorar" value="encontros" type="checkbox">Encontros
+            </label>
+            <label>
+                <input name="melhorar" value="cursos_adicionais" type="checkbox"> Cursos adicionais 
+            </label>
+        </div>
+        <div class="form_group">
+            <p>Algum comentário ou sugestão?</p>
+            <textarea id="comentario" class="input_area" name="comentario" placeholder="Digite seu comentario aqui"></textarea>
+        </div>
+        <div id="botao">
+            <button type="submit" id="submit" class="submit_button">Enviar</button>
+        </div>
+    </form>
+    </div>
+</body>
+
+</html>
